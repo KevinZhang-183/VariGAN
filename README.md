@@ -1,26 +1,4 @@
-# CycleGAN从零到一：介绍、配置、测试、自定义训练（大一作业：个人复现）
-
----
-## CycleGAN介绍
-
-### 简介
-
-&nbsp;&nbsp;&nbsp;&nbsp;CycleGAN是一种深度学习模型，用于图像转换任务。它可以将一组图像从一个领域转换到另一个领域，而需成对的训练数据。例如，将马的图像转换为斑马的图像，或将夏季景色的图像转换为冬季景色的图像。CycleGAN使用对抗性损失函数和循环一致性损失函数来训练模型，以生成高质量的转换图像。在许多应用中都有用，例如风格迁移、图像翻译和图像增强。
-
-
-### 可行度
-
-&nbsp;&nbsp;&nbsp;&nbsp;相比其他图像转换模型，CycleGAN 不需要成对的训练数据使得它更容易应用于实际问题中。传统图像转换方法通常需要成对的训练数据，即两个域之间的对应图像，但这种数据往往难以获取和标注。而 CycleGAN 不需要这些成对数据，而是使用两个域中的任意一组数据进行训练，并且可以处理多种输入类型的图像。
-
-&nbsp;&nbsp;&nbsp;&nbsp;此外，CycleGAN使用对抗性损失函数和循环一致性损失函数来训练模型，以生成高质量的转换图像。这些损失函数可以帮助模型学习到更准确的图像转换，从而生成更真实的转换图像。
-
-### 前景
-
-&nbsp;&nbsp;&nbsp;&nbsp;CycleGAN 的应用领域非常广泛。除了将马的图像转换成斑马的图像或者将夏天的景色转换成冬天的景色等常见的场景外，CycleGAN 还可以应用于其他许多领域。
-
-&nbsp;&nbsp;&nbsp;&nbsp;一个重要应用是将黑白图像转换成彩色图像。在某些情况下，我们只有黑白图像，但需要具备彩色图像的信息。例如，在历史照片修复中，往往需要将传统的黑白照片转换成彩色照片。使用 CycleGAN 模型，我们可以输入黑白图像即可输出相应的彩色图像。
-
-&nbsp;&nbsp;&nbsp;&nbsp;此外，CycleGAN 还可以应用于许多其他领域，如图像风格迁移、人脸表情生成、艺术创作等。在服装等行业中，CycleGAN 可以帮助设计师更好地进行样式迁移和快速设计。在建筑和室内设计领域中，CycleGAN 可以帮助设计师快速生成不同风格的房间布局和室内设计效果图。
+# The offical code of VariGAN: Enhancing Image Style Transfer by UNet Generator & Auto-encoding Discriminator via GAN
 
 
 ### 环境要求
@@ -36,8 +14,6 @@
 - PyTorch1.9.0
 - CUDA11.1
 - GeForce GTX 3060 Laptop GPU
-
-详细步骤参考：[Cyclegan从零到一复现](https://blog.csdn.net/qianqianlwg/article/details/131163503 "使用Cyclegan实现图像风格转换")。
 
 ---
 # 配置步骤：
